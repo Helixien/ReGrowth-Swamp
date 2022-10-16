@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>RG_RawPsychiCap</defName>
+		<label>raw psychi cap</label>
+		<description>Raw cut parts of a psychi cap mushroom. Can be refined into various form of the stimulant drug psychite.</description>
+		<possessionCount>0</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/Resource/PlantFoodRaw/RawPsychiCap</texPath>
+		</graphicData>
+		<thingCategories Inherit="False">
+			<li>PlantMatter</li>
+		</thingCategories>
+		<statBases>
+			<MarketValue>1.9</MarketValue>
+			<Nutrition>0.02</Nutrition>
+			<FoodPoisonChanceFixedHuman>0.08</FoodPoisonChanceFixedHuman>
+		</statBases>
+		<ingestible>
+			<preferability>DesperateOnly</preferability>
+			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+			<foodType>Fungus</foodType>
+		</ingestible>
+		<ingredient>
+			<mergeCompatibilityTags>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Fungus</li>
+			</mergeCompatibilityTags>
+		</ingredient>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

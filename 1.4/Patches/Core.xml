@@ -2,10 +2,53 @@
 <Patch>
 	<Operation Class="PatchOperationSequence">
 		<operations>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/BiomeDef[defName="BorealForest"]/wildPlants</xpath>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/BiomeDef[defName = "ColdBog"]/terrainsByFertility</xpath>
 				<value>
-<!--					<RG_Plant_CardinalReed>0.5</RG_Plant_CardinalReed>-->
+					<terrainsByFertility>
+						<li>
+							<terrain>RG_BorealSoil</terrain>
+							<min>-999</min>
+							<max>0.87</max>
+						</li>
+						<li>
+							<terrain>SoilRich</terrain>
+							<min>0.87</min>
+							<max>999</max>
+						</li>
+					</terrainsByFertility>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "PsychiteTea"]/description</xpath>
+				<value>
+					<description>A fragrant tea infused with leaves of the psychoid plant or the extract of psychoid mushrooms. Drinking it induces a subtle psychite euphoria. This tea is easy to produce at cooking facilities, but can produce psychite addiction if consumed too often.\n\nMany tribes use psychoid tea, both as a daily energizer and as part of social and religious rituals.</description>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "PsychiteTea"]/costList</xpath>
+				<value>
+					<costList>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>PsychoidLeaves</li>
+									<li>RG_RawPsychiCap</li>
+								</thingDefs>
+							</filter>
+							<count>4</count>
+						</li>
+					</costList>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName = "ColdBog"]/wildPlants</xpath>
+				<value>
+					<RG_Plant_CreepStern>3</RG_Plant_CreepStern>
+					<RG_Plant_Dervish>0.2</RG_Plant_Dervish>
+					<RG_Plant_SwampPod>0.05</RG_Plant_SwampPod>
+					<RG_PsychiCap>0.08</RG_PsychiCap>
+					<RG_Plant_TreeWhiteWillow>0.15</RG_Plant_TreeWhiteWillow>
 				</value>
 			</li>
 		</operations>
