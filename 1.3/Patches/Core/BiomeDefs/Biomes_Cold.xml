@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Core</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName = "ColdBog"]/wildPlants</xpath>
+					<value>
+						<RG-CB_Plant_ReedGrass>3.0</RG-CB_Plant_ReedGrass>
+						<RG-CB_Dervish>0.5</RG-CB_Dervish>
+						<RG-CB_Plant_SpruceTreePine>0.6</RG-CB_Plant_SpruceTreePine>
+						<RG-CB_Plant_KarimTree>0.6</RG-CB_Plant_KarimTree>
+						<RG-CB_Volopus>0.05</RG-CB_Volopus>
+						<RG-CB_SwampPod>0.15</RG-CB_SwampPod>
+					</value>
+				</li>
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>

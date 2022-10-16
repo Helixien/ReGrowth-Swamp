@@ -1,23 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef ParentName="PlantFoodRawBase">
+<!--	<ThingDef ParentName="PlantFoodRawBase">
 		<defName>RG_RawPsychiCap</defName>
 		<label>raw psychi cap</label>
-		<description>Raw cut parts of a psychi cap mushroom. Can be refined into various form of the stimulant drug psychite.</description>
+		<description>Raw psychi cap.</description>
 		<possessionCount>0</possessionCount>
 		<graphicData>
 			<texPath>Things/Item/Resource/PlantFoodRaw/RawPsychiCap</texPath>
 		</graphicData>
-		<thingCategories Inherit="False">
-			<li>PlantMatter</li>
-		</thingCategories>
 		<statBases>
 			<MarketValue>1.9</MarketValue>
 			<Nutrition>0.02</Nutrition>
-			<FoodPoisonChanceFixedHuman>0.08</FoodPoisonChanceFixedHuman>
+			<PsychicSensitivity>1.5</PsychicSensitivity>
 		</statBases>
 		<ingestible>
-			<preferability>DesperateOnly</preferability>
 			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
 			<foodType>Fungus</foodType>
 		</ingestible>
@@ -32,5 +28,5 @@
 				<rotDestroys>true</rotDestroys>
 			</li>
 		</comps>
-	</ThingDef>
+	</ThingDef>-->
 </Defs>

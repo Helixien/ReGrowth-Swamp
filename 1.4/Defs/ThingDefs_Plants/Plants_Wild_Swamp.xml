@@ -3,7 +3,7 @@
 	<ThingDef ParentName="PlantBase">
 		<defName>RG_Plant_CreepStern</defName>
 		<label>creep stern</label>
-		<description>Wild Ivy with leafs that grows in patches of leaves in areas of warm temperatures. Takes a long time to grow, but is very frost-resistant.</description>
+		<description>Wild Ivy with star shaped leaves that grows in patches in cold and wet biomes. Takes a long time to grow, but is very frost-resistant.</description>
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
 			<Flammability>0.6</Flammability>
@@ -93,18 +93,18 @@
 		</plant>
 	</ThingDef>
 	<ThingDef ParentName="PlantBase">
-		<defName>RG_PsychiCap</defName>
-		<label>psychi cap</label>
-		<description>text.todo</description>
+		<defName>RG_SychiCap</defName>
+		<label>Sychi cap</label>
+		<description>A small redish mushroom growing in clusters. It grows exclusively in cold bogs.</description>
 		<graphicData>
-			<texPath>Things/Plant/PsychiCap</texPath>
+			<texPath>Things/Plant/SychiCap</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
-			<Nutrition>0.4</Nutrition>
-			<Beauty>2</Beauty>
-			<BeautyOutdoors>2</BeautyOutdoors>
+			<Nutrition>0.3</Nutrition>
+			<Beauty>4</Beauty>
+			<BeautyOutdoors>4</BeautyOutdoors>
 		</statBases>
 		<selectable>true</selectable>
 		<neverMultiSelect>false</neverMultiSelect>
@@ -113,12 +113,12 @@
 		<plant>
 			<fertilityMin>0.04</fertilityMin>
 			<fertilitySensitivity>0.15</fertilitySensitivity>
-			<growDays>18</growDays>
+			<growDays>8</growDays>
 			<maxMeshCount>4</maxMeshCount>
 			<dieIfLeafless>true</dieIfLeafless>
-			<harvestYield>20</harvestYield>
+			<harvestYield>12</harvestYield>
 			<harvestTag>Standard</harvestTag>
-			<harvestedThingDef>RG_RawPsychiCap</harvestedThingDef>
+			<harvestedThingDef>RawFungus</harvestedThingDef>
 			<neverBlightable>true</neverBlightable>
 			<visualSizeRange>0.3~0.5</visualSizeRange>
 			<topWindExposure>0.1</topWindExposure>
@@ -128,7 +128,7 @@
 	<ThingDef ParentName="DeciduousTreeBase">
 		<defName>RG_Plant_TreeWhiteWillow</defName>
 		<label>willow tree</label>
-		<description>One of the fastest growing shade trees, willows provide a beautiful, leafy canopy. It doesn't yield much usable wood.</description>
+		<description>A genetically modified version of the common willow. Provides a beautiful, leafy canopy in white. It doesn't yield much usable wood.</description>
 		<graphicData>
 			<texPath>Things/Plant/WhiteWillow</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
