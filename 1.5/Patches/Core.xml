@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/BiomeDef[defName = "ColdBog"]/terrainsByFertility</xpath>
+				<value>
+					<terrainsByFertility>
+						<li>
+							<terrain>RG_BorealSoil</terrain>
+							<min>-999</min>
+							<max>0.87</max>
+						</li>
+						<li>
+							<terrain>SoilRich</terrain>
+							<min>0.87</min>
+							<max>999</max>
+						</li>
+					</terrainsByFertility>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName = "ColdBog"]/wildPlants</xpath>
+				<value>
+					<RG_Plant_CreepStern>3</RG_Plant_CreepStern>
+					<RG_Plant_Dervish>0.2</RG_Plant_Dervish>
+					<RG_Plant_SwampPod>0.05</RG_Plant_SwampPod>
+					<RG_SychiCap>0.08</RG_SychiCap>
+					<RG_Plant_TreeWhiteWillow>0.15</RG_Plant_TreeWhiteWillow>
+					<RG_Plant_SychiCap>0.000000000000001</RG_Plant_SychiCap>
+					<!--=============== Why the 0s? Because I cant lock them to a biome unless the value is greater than 0 because fuck me I gues... ==============-->
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

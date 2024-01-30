@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>RG_RawPsychiCap</defName>
+		<label>raw psychi cap</label>
+		<description>Raw psychi cap.</description>
+		<possessionCount>0</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/Resource/PlantFoodRaw/RawPsychiCap</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.9</MarketValue>
+			<Nutrition>0.02</Nutrition>
+			<PsychicSensitivity>1.5</PsychicSensitivity>
+		</statBases>
+		<ingestible>
+			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+			<foodType>Fungus</foodType>
+		</ingestible>
+		<ingredient>
+			<mergeCompatibilityTags>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Fungus</li>
+			</mergeCompatibilityTags>
+		</ingredient>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>-->
+</Defs>
